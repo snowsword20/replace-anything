@@ -184,6 +184,48 @@
             color: rgb(30, 30, 30);
             text-decoration: none;
         }
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .content-div,
+            .btn-div,
+            .gallery-section,
+            .explore-section {
+                width: 90%; /* Adjust width for smaller screens */
+                margin: 20px auto;
+            }
+
+            .row,
+            .post-grid {
+                flex-direction: column;
+            }
+
+            .column,
+            .post {
+                width: 100%; /* Full width on small screens */
+                margin-bottom: 15px;
+            }
+
+            .column img,
+            .post img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            nav a,
+            .btn {
+                padding: 10px; /* Larger touch targets */
+            }
+
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: space-around;
+                padding-top: 10px;
+            }
+        }
     </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BW62Z97P1K"></script>
